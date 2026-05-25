@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap網頁</title>
+  </head>
+  <body>
+    <div class="container">
+	  <!-- 導覽列 -->
+	  <nav class="navbar navbar-light bg-light navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">日光旅遊</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbar1"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">首頁</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">票券</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">訂房</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">國內訂房</a>
+                  <a class="dropdown-item" href="#">國外訂房</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- 輪播 -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+	    <!-- 輪播指示 -->
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>		
+	    <!-- 輪播內容 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="photo1.jpg" class="d-block w-100" alt="真善美湖區">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>奧地利真善美湖區</h5>          
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="photo2.jpg" class="d-block w-100" alt="熊布朗宮">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>奧地利熊布朗宮</h5>        
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="photo3.jpg" class="d-block w-100" alt="雪的美術館">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>北海道雪的美術館</h5>        
+            </div>
+          </div>
+        </div>		
+	    <!-- 輪播控制 -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <!-- 警報效果 (兩個) -->	  
+      <div class="alert alert-success mt-3" role="alert">
+        <a href="#" class="alert-link"><strong>年終特惠！</strong></a>
+		雙十連假出國馬上報名一人現折3000元！
+      </div>
+      <div class="alert alert-info" role="alert">
+        <a href="#" class="alert-link"><strong>賞楓一起GO！</strong></a>
+		日本賞楓團享四人同行一人免費！
+      </div>
+
+      <!-- 主要內容 (三個景點卡片) -->
+      <main>
+        <div class="row">
+          <!-- 第一個景點 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Israel1.jpg">
+              <div class="card-body">
+                <h5 class="card-title">哭牆</h5>
+                <p class="card-text">哭牆又名「西牆」，位於以色列耶路撒冷老城內，聖殿山山下西側，這是環繞第二聖殿庭院的古城牆殘存部分。在四面牆之中，西牆被認為是當年最靠近聖殿的，使它成為猶太教信仰中除聖殿山本身以外最神聖的地點。許多世紀以來，哭牆一直是猶太人祈禱和朝聖的地點，最早記載猶太來此祈禱的文獻可以追溯到西元四世紀。</p>
+              </div>
+            </div>
+          </div>  
+          <!-- 第二個景點 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Israel2.jpg">
+              <div class="card-body">
+                <h5 class="card-title">死海</h5>
+                <p class="card-text">死海是世界上地勢最低的湖泊，湖面海拔負424米，水源為約旦河。湖長67公里，寬18公里，面積810平方公里。湖水鹽度極高，越到湖底越高。一般海水含鹽量為3.5%，而死海的含鹽量在23%至30%左右。目前死海水位平均每年下降1米，原因是注入死海的約旦河水由於農業灌溉從過去每年13億立方米減少到目前3000萬立方米。</p>
+              </div>
+            </div>
+          </div>  
+          <!-- 第三個景點 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="Israel3.jpg">
+              <div class="card-body">
+                <h5 class="card-title">特拉維夫</h5>
+                <p class="card-text">特拉維夫是以色列的第二大城市，也是公認的以色列首都，人口主要為猶太人，阿拉伯人則占總人口的4%。特拉維夫濱臨東地中海，市區面積51.76平方公里。根據統計，有三百多萬人口，是以色列人口最稠密的地帶，也是以色列的經濟樞紐。特拉維夫已經逐漸成為世界級的城市，並被列為中東生活費用最昂貴的城市之一。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>		
+
+      <!-- 頁尾 -->
+	  <footer>	  
+	    <hr>              
+        <p>日光旅遊&middot;洽詢電話：0800-000-168</p>
+		<p class="text-end"><a href="#">Back to top</a></p>
+      </footer>
+    </div>	
+  </body>
+</html>
